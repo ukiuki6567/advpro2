@@ -14,7 +14,7 @@ RUN mv apache-tomcat-9.0.36 /usr/local/java/apache-tomcat-9.0.36
 RUN chown -R tomcat:tomcat /usr/local/java/apache-tomcat-9.0.36/
 
 RUN mkdir /var/run/sshd
-RUN echo 'root:aplpro2' | chpasswd
+RUN echo 'root:advpro2' | chpasswd
 RUN sed -i 's/#PermitRootLogin prohibit-password/PermitRootLogin yes/' /etc/ssh/sshd_config
 RUN sed -i 's/#PasswordAuthentication/PasswordAuthentication/' /etc/ssh/sshd_config
 RUN echo "Completed!"
